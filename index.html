@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Sarthaak.css" />
+    <link rel="icon" type="image/x-icon" href="/images/pngegg.png">
+    <title>Sarthaak</title>
+    
+</head>
+<body>
+    <div class="bx-1">
+        <div class="head">
+            <p>Default Data</p>
+        </div>
+
+        <div class="form-bx">
+            <!-- First Field: Types of User Request -->
+            <div class="field">
+                <div class="form-head">
+                    <p>Types of User Request: <span>*</span></p>
+                </div>
+                <div class="form-input">
+                    <select id="requestType" onchange="redirectToModification()">
+                        <option value="Select">Select</option>
+                        <option value="creation">Creation</option>
+                        <option value="modification">Modification</option>
+                        <!-- <option value="deletion">Deletion</option> -->
+                    </select>
+                </div>
+            </div>
+            <!-- ./First Field -->
+
+            <!-- Second Field: Request For -->
+            <div class="field">
+                <div class="form-head">
+                    <p>Request For: <span>*</span></p>
+                </div>
+                <div class="form-input">
+                    <div class="rd-bx">
+                        <div class="rd-1">
+                            <input type="radio" id="myself" name="requestFor" checked />
+                            <label for="myself">Myself</label>
+                        </div>
+                        <div class="rd-2">
+                            <input type="radio" id="onBehalf" name="requestFor" />
+                            <label for="onBehalf">On behalf of</label>
+                        </div>
+                    </div>
+                    <div class="emp-bx">
+                        <input type="text" placeholder="Enter Employee Details..." disabled />
+                    </div>
+                </div>
+            </div>
+            <!-- ./Second Field -->
+
+            <!-- Third Field: Application -->
+            <div class="field">
+                <div class="form-head">
+                    <p>Application: <span>*</span></p>
+                </div>
+                <div class="form-input">
+                    <select>
+                        <option value="Select">Select</option>
+                        <option value="sfdc">Sarthaak</option>
+                        <option value="Aadhar Vault">Aadhar Vault</option>
+                        <option value="CRM Next">CRM Next</option>
+                    </select>
+                </div>
+            </div>
+            <!-- ./Third Field -->
+
+            <!-- Fourth Field: Module Name -->
+            <div class="field">
+                <div class="form-head">
+                    <p>Module Name: <span>*</span></p>
+                </div>
+                <div class="form-input">
+                    <select>
+                        <option value="Select">Select</option>
+                        <option value="sfdc">Sarthaak</option>
+                        <option value="Aadhar Vault">Aadhar Vault</option>
+                        <option value="CRM Next">CRM Next</option>
+                    </select>
+                </div>
+            </div>
+            <!-- ./Fourth Field -->
+
+            <!-- Fifth Field: Business Justification -->
+            <div class="field">
+                <div class="form-head">
+                    <p>Business Justification: <span>*</span></p>
+                </div>
+                <div class="form-input">
+                    <input type="text" placeholder="Enter Business Justification Here..." />
+                </div>
+            </div>
+            <!-- ./Fifth Field -->
+        </div>
+    </div>
+
+    <div class="bx-2">
+        <div class="head">
+            <p>Additional Data Required For Sarthaak</p>
+        </div>
+
+        <div class="form-grp-bx">
+            <div class="form-bx-1">
+                <!-- Additional Field: Name -->
+                <div class="field">
+                    <div class="form-head">
+                      <p>Employee Name: <span></span></p>
+                    </div>
+                    <div class="form-input">
+                   
+                        <input type="text"placeholder="Autopopulated " disabled/>
+                     
+                    </div>
+                  </div>
+         
+                <!-- Additional Field: Email Id -->
+                
+
+                <div class="field">
+                    <div class="form-head">
+                      <p>Mobile Number: <span></span></p>
+                    </div>
+                    <div class="form-input">
+                   
+                        <input type="text"placeholder="Autopopulated " disabled />
+                     
+                    </div>
+                  </div>
+
+
+                  <div class="form-bx-5">
+                    <div class="form-field">
+                        <div class="form-head">
+                            <p>Branch: <span>*</span></p>
+                        </div>
+                        <div class="form-input">
+                            <select>
+                                <option value="Select">Select</option>
+                                <option value="Select">Pune</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="field">
+                    <div class="form-head">
+                      <p>Email ID: <span></span></p>
+                    </div>
+                    <div class="form-input">
+                   
+                        <input type="text"placeholder="Autopopulated " disabled/>
+                     
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="form-field">
+                    <div class="form-head">
+                        <p>Approval Level 1: <span>*</span></p>
+                    </div>
+                    <div class="form-input">
+                        <select>
+                            <option value="Select">Select</option>
+                            <option value="Amit Goel">Amit Goel</option>
+                            <option value="Niki Kushe">Niki Kushe</option>
+                        </select>
+                    </div>
+                </div>
+                  
+
+
+            </div>
+
+            <div class="form-bx-2">
+               
+                <!-- Additional Field: Channel & Associated Business Unit -->
+                <div class="form-bx-9">
+
+
+                    <div class="field">
+                        <div class="form-head">
+                          <p>User ID: <span></span></p>
+                        </div>
+                        <div class="form-input">
+                       
+                            <input type="text"placeholder="Autopopulated " disabled/>
+                         
+                        </div>
+                      </div>
+
+
+
+                      <div class="form-bx-5">
+                        <div class="form-field">
+                            <div class="form-head">
+                                <p>State Name: <span>*</span></p>
+                            </div>
+                            <div class="form-input">
+                                <select>
+                                    <option value="Select">Select</option>
+                                    <option value="Select">Maharashtra</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="form-bx-5"></div>
+                        <div class="form-field">
+                            <div class="form-head">
+                                <p>Region: <span>*</span></p>
+                            </div>
+                            <div class="form-input">
+                                <select>
+                                    <option value="Select">Select</option>
+                                    <option value="Select">ROMG</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                  
+                    <div class="form-bx-5">
+                        <div class="form-field">
+                            <div class="form-head">
+                                <p>User Role: <span>*</span></p>
+                            </div>
+                            <div class="form-input">
+                                <select>
+                                    <option value="Select">Select</option>
+                                    <option value="Select">LO</option>
+                                    <option value="Select">BM</option>
+                                    <option value="Select">BCM</option>
+                                    <option value="Select">CCM</option>
+                                    <option value="Select">ZCM</option>
+                                    <option value="Select">NCM</option>
+                                    <option value="Select">RCM</option>
+                                    <option value="Select">Ops Maker / Checker</option>
+                                    <option value="Select">Management View</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                  
+                    <!-- Additional Field: Approval Level 2 -->
+                    <div class="form-field">
+                        <div class="form-head">
+                            <p>Approval Level 2: <span>*</span></p>
+                        </div>
+                        <div class="form-input">
+                            <select>
+                                <option value="Select">Select</option>
+                                <option value="Amit Goel">Amit Goel</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buttons for Reset and Submit -->
+    <div class="btn-grp-bx">
+        <div class="btn btn-1">
+            <button>Reset</button>
+        </div>
+        <div class="btn btn-2">
+            <button>Submit</button>
+        </div>
+    </div>
+</body>
+</html>
